@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #0B0C10;
+  --color-surface: #121317;
+  --color-elev-1: #171922;
+  --color-text: #E6E8F0;
+  --color-muted: #AAB2C5;
+  --color-primary: #3B82F6;
+  --color-primary-700: #1D4ED8;
+  --color-accent: #22D3EE;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-border: #2A2D3A;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Base focus styles */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
